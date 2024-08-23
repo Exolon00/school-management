@@ -9,7 +9,7 @@ const calculateDistance = (lat1, lon1, lat2, lon2) => {
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     const distance = R * c;
     const roundupDistance = parseFloat(distance.toFixed(3));
-    return roundupDistance+"km"; 
+    return roundupDistance; 
   };
   
   export default calculateDistance;
